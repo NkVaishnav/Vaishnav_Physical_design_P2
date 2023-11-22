@@ -62,7 +62,7 @@ then
 
 else
        	echo "Info: CSV file accepted"
-       	tclsh tcl.tcl $1
+       	tclsh tclbox.tcl $1
 fi
 ```
 We have created 6 scenarios in total using the above script which can be used 
@@ -87,7 +87,7 @@ We have created 6 scenarios in total using the above script which can be used
 input file - openMSP430_design_constraints.csv
 
 
-Code: tcl.tcl
+Code: tclbox.tcl
 
  ```
 set start_time [clock clicks -microseconds]
@@ -121,6 +121,9 @@ while {$i < $n_rows} {
  ```
 
 Output of the above is as shown below 
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/e776ddbd-51fc-4576-b1b1-648cdb0f9111)
+
 
 Above shown code has set of variables defined as follows.
 
@@ -221,7 +224,7 @@ Output of the above code is as follows
 <details>
 <summary>Day 3</summary>
 On Day 3, the focus lies in examining dclock abnd input constraints stored in a CSV file and producing an SDC file. The process involves utilizing matrix search algorithms and a specialized algorithm to differentate between bus and bit inputs. The constraints from the CSV file are processed for clocks, resulting in SDC commands saved in the '.sdc' file (clock name : dco_clk_tcl).
-Refer to the code : 'tcl.tcl'
+Refer to the code : 'tclbox.tcl'
 
 ```
 # Conversion of constraints csv file to SDC
@@ -288,7 +291,7 @@ Output of the above code is as shown below
 <details>
 <summary>Day 4</summary>
 On Day 4, the agenda involves scripting for the Yosys synthesis, specifically tackling tasks like handling the output section, generating SDC, inspecting Yosys hierarchy and resolving errors. The script processes the constraints CSV for the OUTPUTS, depositing relavant SDC commands into the '.sdc' 
-Check out the code: 'tcl.tcl'
+Check out the code: 'tclbox.tcl'
 
 ```
 # Finding column number starting for output clock latency in OUTPUTS section only
@@ -362,7 +365,7 @@ Output of the above script is as shown below
 
 **Script for the Hierarchy check**
 
-Check out the code: 'tcl.tcl'
+Check out the code: 'tclbox.tcl'
 
 ```
 # Hierarchy Check
@@ -730,7 +733,7 @@ puts "set_timing_fpath $sdc_dirname/$sdc_filename.timing"
 
 **Using the procs to write timing files**
 
-Check the below code tcl.tcl
+Check the below code tclbox.tcl
 
 ```
 ############################################# Calling procs needed to generate .timing file ###################################################
@@ -806,7 +809,7 @@ Output of the above code is as follows
 
 **Running STA and generating the QOR**
 
-Check the below code for the update  tcl.tcl
+Check the below code for the update  tclbox.tcl
 
 
 ```
@@ -823,7 +826,7 @@ Output of the above code is as follows
 
 **Data extraction and QOR**
 
-Code taken form tcl.tcl
+Code taken form tclbox.tcl
 
 ```
 # Find worst output violation
@@ -920,7 +923,7 @@ Output of the above image is as follows
 
 **Final QOR report generation**
 
-Source code :  tcl.tcl
+Source code :  tclbox.tcl
 
 ```
 # Quality of Results (QoR) generation
