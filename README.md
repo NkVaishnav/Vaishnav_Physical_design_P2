@@ -86,6 +86,10 @@ We have created 6 scenarios in total using the above script which can be used
 
 input file - openMSP430_design_constraints.csv
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/9538d85f-8b1d-4fb8-91be-d58644698546)
+
+**Variable Creation**
+
 
 Code: tclbox.tcl
 
@@ -122,7 +126,7 @@ while {$i < $n_rows} {
 
 Output of the above is as shown below 
 
-![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/e776ddbd-51fc-4576-b1b1-648cdb0f9111)
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/167c76c0-d1b0-4bde-a01e-9281f221ef68)
 
 
 Above shown code has set of variables defined as follows.
@@ -184,6 +188,9 @@ if { ![file exists $Constraints_File] } {
 
 Output of the above image is as follows
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/6ea106af-6a23-4bb1-a5f2-1d796c2fa3f4)
+
+
 **Processing openMSP430_design_constraints.csv file**
 
 Code used
@@ -217,6 +224,8 @@ puts "OUTPUTS starting row in CSV file = $outputs_start "
 
 ```
 Output of the above code is as follows
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/b052468f-e4a0-4d82-b56e-60de22a7bc27)
 
 
 </details>
@@ -285,6 +294,7 @@ puts "\n Clock actual ending row = $end_of_clocks"
 ```
 Output of the above code is as shown below 
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/ab9c8d52-6ac3-4dff-b279-9e7f3b03c159)
 
 </details>
 
@@ -363,6 +373,9 @@ puts "\nInfo-SDC: SDC created. Please use constraints in path $Output_Directory/
 ```
 Output of the above script is as shown below 
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/3d9ddaa4-8190-462e-8447-b0aa8df191e7)
+
+
 **Script for the Hierarchy check**
 
 Check out the code: 'tclbox.tcl'
@@ -412,6 +425,12 @@ if { $error_flag } {
 
 Output of the above script is as shown below
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/c5678108-c232-41fc-9e81-0e2ab3b417cd)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/4879d78d-4c9e-464b-be6b-439ddc43b6aa)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/0620d883-bf99-41b6-84dc-8d1a85bceacf)
+
 
   
 </details>
@@ -448,6 +467,11 @@ puts "\nInfo: Synthesis script created and can be accessed from path $Output_Dir
 
 Output of the above code is as follows
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/e8b911cb-7576-40d4-a3be-c0048b99ba38)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/e8cfc405-58af-4d8c-9939-a9c8f1823372)
+
+
 Below script is ran for synthesis and handling errors
 
 ```
@@ -463,6 +487,8 @@ if { [catch {exec yosys -s $Output_Directory/$Design_Name.ys >& $Output_Director
 puts "\nInfo: Please refer to log $Output_Directory/$Design_Name.synthesis.log"
 ```
 Output is as follows
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/90efe934-5cd2-4f2e-8b51-16dcaaa2727e)
 
 
  Procs can be used to create user-defined commands.
@@ -763,6 +789,11 @@ reopenStdout /dev/tty
 
 Output of the above code is as follows 
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/edec11a7-b526-4adc-8ac9-9e9ab2b790c6)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/be91117d-0f7b-43bd-b6ca-474d302a145c)
+
+
 **Preparation of .CONF and SPEF file for OpenTimer STA**
 
 Check the below code for the following 
@@ -801,6 +832,10 @@ close $conf_file
 
 Output of the above code is as follows 
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/e79cd480-7c84-4530-9662-3957b3a487d5)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/6aabf77a-5435-4e1a-8730-bb1f5a3c07c8)
+
 
 </details>
 
@@ -823,6 +858,9 @@ puts "\nInfo: Refer to $Output_Directory/$Design_Name.results for warnings and e
 ```
 
 Output of the above code is as follows 
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/2320067b-1822-4f36-9b6c-1bc6832a42fb)
+
 
 **Data extraction and QOR**
 
@@ -921,6 +959,10 @@ puts "\nInfo: Time elapsed = $time_elapsed_in_sec"
 ```
 Output of the above image is as follows 
 
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/41dc92c9-4ba2-40bd-8722-e929b428d7bb)
+
+
+
 **Final QOR report generation**
 
 Source code :  tclbox.tcl
@@ -928,7 +970,7 @@ Source code :  tclbox.tcl
 ```
 # Quality of Results (QoR) generation
 puts "\n"
-puts "                                                           ****PRELAYOUT TIMING RESULTS_TCL****\n"
+puts "                                                           ****PRELAYOUT TIMING RESULTS_TCLBOX****\n"
 set formatStr {%15s%14s%21s%16s%16s%15s%15s%15s%15s}
 puts [format $formatStr "-----------" "-------" "--------------" "---------" "---------" "--------" "--------" "-------" "-------"]
 puts [format $formatStr "Design Name" "Runtime" "Instance Count" "WNS Setup" "FEP Setup" "WNS Hold" "FEP Hold" "WNS RAT" "FEP RAT"]
@@ -939,7 +981,12 @@ foreach design_name $Design_Name runtime $time_elapsed_in_sec instance_count $In
 puts [format $formatStr "-----------" "-------" "--------------" "---------" "---------" "--------" "--------" "-------" "-------"]
 puts "\n"
 ```
+
 Output of the above code is as follows 
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/b5bf9771-f8c8-46ab-ae75-0e7364545d39)
+
+![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/9a4a8522-79c3-410c-8edf-11782236d7bc)
 
 
 </details>
