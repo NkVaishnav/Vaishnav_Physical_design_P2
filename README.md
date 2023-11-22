@@ -358,10 +358,6 @@ while { $i < $end_of_outputs } {
 close $sdc_file
 puts "\nInfo-SDC: SDC created. Please use constraints in path $Output_Directory/$Design_Name.sdc"
 ```
-Output of the above script is as shown below 
-
-![image](https://github.com/NkVaishnav/Vaishnav_Physical_design_P2/assets/142480622/3d9ddaa4-8190-462e-8447-b0aa8df191e7)
-
 
 **Script for the Hierarchy check**
 
