@@ -990,6 +990,8 @@ Output of the above code is as follows
 
 
 </details>
+
+
 ## Day 31: Low Power Design 
 
 <details>
@@ -1171,11 +1173,6 @@ Output of the above code is as follows
    - Proper verification and testing are crucial to ensure correct functionality of power gating to prevent issues like data loss or corruption during power transitions.
 
 
-*Retention*
-
-<p align="center">
- <img width="1080" alt="lpd4.png" src="https://github.com/05TharunKM/Samsung-PD-Training-/blob/5a52f1169574277ae452b80756bd6a53d3e76732/docs/assets/LPD/lpd4.png">
-</p>  
 
 *Dynamic Voltage Scaling(DVS)*
 
